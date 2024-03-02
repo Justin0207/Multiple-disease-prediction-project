@@ -78,7 +78,7 @@ with st.sidebar:
                            default_index = 0)
 
 # Diabetes Prediction page
-if (selected == 'Diabetes Prediction'):
+if (selected == 'Diabetes Risk Prediction'):
     
       
     
