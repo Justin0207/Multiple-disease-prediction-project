@@ -12,6 +12,10 @@ import pandas as pd
 import base64
 
 
+st.set_page_config(
+        page_title="Multiple Disease Risk Predictor" 
+)
+
 def sidebar_bg(side_bg):
 
    side_bg_ext = 'png'
@@ -67,9 +71,9 @@ heart_model = pickle.load(open('svc_heart.pkl', 'rb'))
 
 
 with st.sidebar:
-    selected = option_menu('Multiple Disease Prediction System',
-                           ['Diabetes Prediction',
-                            'Thyroid Disease Prediction', 'Heart Disease Prediction'],
+    selected = option_menu('Multiple Disease Risk Prediction System',
+                           ['Diabetes Risk Prediction',
+                            'Thyroid Disease Risk Prediction', 'Heart Disease Risk Prediction'],
                            icons = ['activity', 'person', 'heart-pulse-fill'],
                            default_index = 0)
 
@@ -80,7 +84,7 @@ if (selected == 'Diabetes Prediction'):
     
     
     # page title
-    st.title('Diabetes Mellitus Prediction')
+    st.title('Diabetes Mellitus Risk Prediction')
     
     
     gender = st.selectbox('Gender', ['Male', 'Female', 'Choose not to disclose'])
@@ -187,7 +191,7 @@ if (selected == 'Diabetes Prediction'):
  ###################################################################################################################################################################       
     
     
-if (selected == 'Thyroid Disease Prediction'):
+if (selected == 'Thyroid Disease Risk Prediction'):
     
     
     
@@ -289,7 +293,7 @@ if (selected == 'Thyroid Disease Prediction'):
  #######################################################################################################################################################################   
 
 
-if (selected == 'Heart Disease Prediction'):
+if (selected == 'Heart Disease Risk Prediction'):
     
     
      age_h = st.text_input('Age : ', value = None, placeholder = "Input your age")
