@@ -196,7 +196,7 @@ if (selected == 'Thyroid Disease Risk Prediction'):
     
     
     # page title
-    st.title('Thyroid Prediction Using Machine Learning')
+    st.title('Thyroid Risk Prediction')
     
     
     sex = st.selectbox('Sex', ['Male', 'Female', 'Choose not to disclose'])
@@ -294,6 +294,9 @@ if (selected == 'Thyroid Disease Risk Prediction'):
 
 
 if (selected == 'Heart Disease Risk Prediction'):
+
+        # page title
+    st.title('Heart Disease Risk Prediction')
     
     
      age_h = st.text_input('Age : ', value = None, placeholder = "Input your age")
