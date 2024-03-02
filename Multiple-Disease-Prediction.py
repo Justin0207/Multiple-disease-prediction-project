@@ -8,8 +8,6 @@ Created on Sat Feb 24 03:37:18 2024
 import pickle
 import streamlit as st
 from streamlit_option_menu import option_menu
-import warnings
-warnings.filterwarnings("ignore")
 import pandas as pd
 import base64
 
