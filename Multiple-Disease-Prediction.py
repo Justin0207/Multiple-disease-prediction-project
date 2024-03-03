@@ -59,7 +59,7 @@ sidebar_bg('images.jpg')
 
 # Loading the saved models
 
-diabetes_model = pickle.load(open('xgb_diabetes3.pkl', 'rb'))
+diabetes_model = pickle.load(open('rf_diabetes_.pkl', 'rb'))
 
 
 thyroid_model = pickle.load(open('rf_thyroid.pkl', 'rb'))
