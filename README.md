@@ -1,1 +1,1 @@
-# Multiple-disease-predictionproject
+# Multiple-disease-prediction-project
