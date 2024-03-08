@@ -6,4 +6,8 @@ secondaryBackgroundColor="#216885"
 
 
 [global]
-showWarningOnDirectExecution = true
+showWarningOnDirectExecution = false
+
+
+[client]
+showErrorDetails = false
