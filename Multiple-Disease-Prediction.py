@@ -5,12 +5,6 @@ Edited on Fri Mar  8 19:40:04 2024
 @author: HP
 """
 
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Feb 24 03:37:18 2024
-
-@author: HP
-"""
 
 import pickle
 import streamlit as st
