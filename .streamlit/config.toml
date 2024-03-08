@@ -11,4 +11,4 @@ showWarningOnDirectExecution = false
 
 [client]
 showErrorDetails = false
-showTracebacks = false
+
