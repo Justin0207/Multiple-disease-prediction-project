@@ -1,5 +1,12 @@
 # -*- coding: utf-8 -*-
 """
+Edited on Fri Mar  8 19:40:04 2024
+
+@author: HP
+"""
+
+# -*- coding: utf-8 -*-
+"""
 Created on Sat Feb 24 03:37:18 2024
 
 @author: HP
@@ -179,7 +186,7 @@ if (selected == 'Diabetes Risk Prediction'):
                                                            bmi_category_obese, smoking_history_never]).T)
         except NameError:
 
-                st.error('Input Values For Height and Weight')
+                st.error('Missing or Null Input(s)')
                 st.stop()
         
         
@@ -193,7 +200,7 @@ if (selected == 'Diabetes Risk Prediction'):
             
     
     
- ###################################################################################################################################################################       
+ ########################################################### Thyroid Disease Prediction ########################################################################################################       
     
     
 if (selected == 'Thyroid Disease Risk Prediction'):
@@ -269,9 +276,15 @@ if (selected == 'Thyroid Disease Risk Prediction'):
     thy_diagnosis = ''
     
     if st.button('Thyroid Disease Test Result : '):
-        
-        thy_prediction = thyroid_model.predict_proba(pd.DataFrame([age_thy, thyroid_surgery, tumor, psych,
-                                                             TSH, T3, TT4, T4U, FTI, sex_M]).T)
+        try:
+                
+                thy_prediction = thyroid_model.predict_proba(pd.DataFrame([age_thy, thyroid_surgery, tumor, psych,
+                                                                     TSH, T3, TT4, T4U, FTI, sex_M]).T)
+        except ValueError:
+
+                st.error('Missing or Null Input(s)')
+
+                st.stop()
         
         if thy_prediction[0][1] == thy_prediction.max():
         
@@ -295,7 +308,7 @@ if (selected == 'Thyroid Disease Risk Prediction'):
             
         
         
- #######################################################################################################################################################################   
+ ####################################################### Heart Disease Prediction ################################################################################################################   
 
 
 if (selected == 'Heart Disease Risk Prediction'):
@@ -428,12 +441,18 @@ if (selected == 'Heart Disease Risk Prediction'):
      
      
      if st.button('Heart Disease Test Result : '):
+         try:
          
          
-         heart_prediction = heart_model.predict_proba(pd.DataFrame([age_h, resting_bp, chol, fasting_bs,
-                                                max_hr, oldpeak, sex_m, chest_ata, chest_nap,
-                                                chest_ta, rest_ecg_normal, exer_ang_y, st_slope_flat,
-                                                st_slope_up, chol_high]).T)
+                heart_prediction = heart_model.predict_proba(pd.DataFrame([age_h, resting_bp, chol, fasting_bs,
+                                                        max_hr, oldpeak, sex_m, chest_ata, chest_nap,
+                                                        chest_ta, rest_ecg_normal, exer_ang_y, st_slope_flat,
+                                                        st_slope_up, chol_high]).T)
+         except ValueError:
+
+                st.error('Missing or Null Input(s)')
+
+                st.stop()
          
          
          if heart_prediction[0][1] >= 0.5:
