@@ -3,3 +3,7 @@ base="dark"
 primaryColor="#0c4258"
 backgroundColor="#216885"
 secondaryBackgroundColor="#216885"
+
+
+[global]
+showWarningOnDirectExecution = true
