@@ -180,6 +180,7 @@ if (selected == 'Diabetes Risk Prediction'):
         except NameError:
 
                 st.error('Input Values For Height and Weight')
+                st.stop()
         
         
         if diab_prediction[0][1] >= 0.5:
