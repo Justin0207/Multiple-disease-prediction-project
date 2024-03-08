@@ -172,10 +172,14 @@ if (selected == 'Diabetes Risk Prediction'):
     diab_diagnosis = ''
     
     if st.button('Diabetes Test Result : '):
+        try:
         
-        diab_prediction = diabetes_model.predict_proba(pd.DataFrame([age, bmi, HbA1c_level, blood_glucose_level, age_group_young, age_group_senior,
-                                                   glucose_category_normal, glucose_category_risky,
-                                                   bmi_category_obese, smoking_history_never]).T)
+                diab_prediction = diabetes_model.predict_proba(pd.DataFrame([age, bmi, HbA1c_level, blood_glucose_level, age_group_young, age_group_senior,
+                                                           glucose_category_normal, glucose_category_risky,
+                                                           bmi_category_obese, smoking_history_never]).T)
+        except NameError:
+
+                st.error('Input Values For Height and Weight')
         
         
         if diab_prediction[0][1] >= 0.5:
