@@ -191,6 +191,19 @@ if (selected == 'Diabetes Risk Prediction'):
         else:
             
             st.write('**Diabetes Risk : :green[{}%]**'.format(round(diab_prediction[0][1] * 100)))
+
+
+        st.markdown("Made with ❤️ by [Anyanwu Justice](https://github.com/Justin0207)")
+        st.write(
+            """
+            <style>
+                footer {
+                    visibility: hidden;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
             
     
     
@@ -299,6 +312,19 @@ if (selected == 'Thyroid Disease Risk Prediction'):
             st.write('**Hypothyroidism Risk : :green[{} %]**'.format(round(thy_prediction[0][1] * 100)))
             
             st.write('**Hyperthyroidism Risk : :green[{} %]**'.format(round(thy_prediction[0][2] * 100)))
+
+
+        st.markdown("Made with ❤️ by [Anyanwu Justice](https://github.com/Justin0207)")
+        st.write(
+            """
+            <style>
+                footer {
+                    visibility: hidden;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
             
         
         
@@ -456,4 +482,17 @@ if (selected == 'Heart Disease Risk Prediction'):
          else:
              
              st.write('**Heart Disease Risk : :green[{}%]**'.format(round(heart_prediction[0][1] * 100)))
+
+
+        st.markdown("Made with ❤️ by [Anyanwu Justice](https://github.com/Justin0207)")
+        st.write(
+            """
+            <style>
+                footer {
+                    visibility: hidden;
+                }
+            </style>
+            """,
+            unsafe_allow_html=True,
+        )
          
