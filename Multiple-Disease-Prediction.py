@@ -377,7 +377,7 @@ if (selected == 'Heart Disease Risk Prediction'):
      if exercise_ang == 'Yes':
          
          exer_ang_y = 1
-        chest_pain = st.selectbox('Chest Pain type', ['Atypical Angina', 'Typical Angina', 'Non-Angina Pain', 'Asymptomatic Chest Pain'])
+         chest_pain = st.selectbox('Chest Pain type', ['Atypical Angina', 'Typical Angina', 'Non-Angina Pain', 'Asymptomatic Chest Pain'])
      
      
              if chest_pain == 'Atypical Angina':
