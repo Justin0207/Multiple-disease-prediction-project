@@ -358,34 +358,6 @@ if (selected == 'Heart Disease Risk Prediction'):
      
      oldpeak = st.number_input('Oldpeak Value : ', step = 0.1,value = None, placeholder = "Input your Oldpeak value")
      
-     
-     chest_pain = st.selectbox('Chest Pain type', ['Atypical Angina', 'Typical Angina', 'Non-Angina Pain', 'Asymptomatic Chest Pain'])
-     
-     
-     if chest_pain == 'Atypical Angina':
-         
-         chest_ata = 1
-         
-     else:
-         
-         chest_ata = 0
-         
-         
-     if chest_pain == 'Typical Angina':
-         
-         chest_ta = 1
-         
-     else:
-         
-         chest_ta = 0
-         
-     if chest_pain == 'Non-Angina Pain':
-         
-         chest_nap = 1
-         
-     else:
-         
-         chest_nap = 0
          
          
      rest_ecg = st.selectbox('Resting ECG', ['Normal', 'ST', 'LVH'], help = 'Resting ECG result')
@@ -405,6 +377,33 @@ if (selected == 'Heart Disease Risk Prediction'):
      if exercise_ang == 'Yes':
          
          exer_ang_y = 1
+        chest_pain = st.selectbox('Chest Pain type', ['Atypical Angina', 'Typical Angina', 'Non-Angina Pain', 'Asymptomatic Chest Pain'])
+     
+     
+             if chest_pain == 'Atypical Angina':
+                 
+                 chest_ata = 1
+                 
+             else:
+                 
+                 chest_ata = 0
+                 
+                 
+             if chest_pain == 'Typical Angina':
+                 
+                 chest_ta = 1
+                 
+             else:
+                 
+                 chest_ta = 0
+                 
+             if chest_pain == 'Non-Angina Pain':
+                 
+                 chest_nap = 1
+                 
+             else:
+                 
+                 chest_nap = 0
          
      else:
          
