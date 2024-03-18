@@ -371,7 +371,7 @@ if (selected == 'Heart Disease Risk Prediction'):
          
          rest_ecg_normal = 0
          
-     exercise_ang = st.selectbox('Do you experience exercise-induced angina or chest pain', ['Yes', 'No'])
+     exercise_ang = st.selectbox('Do you experience exercise-induced angina or chest pain', ['No', 'Yes'])
      
      
      if exercise_ang == 'Yes':
@@ -408,6 +408,9 @@ if (selected == 'Heart Disease Risk Prediction'):
      else:
          
          exer_ang_y = 0
+         chest_ata = 0
+         chest_nap = 0
+         chest_ta = 0
          
      st_slope = st.selectbox('ST Slope', ['Down', 'Flat', 'Up'], help = 'This refers to the slope of the peak exercise ST segment')
      
