@@ -380,30 +380,30 @@ if (selected == 'Heart Disease Risk Prediction'):
          chest_pain = st.selectbox('Chest Pain type', ['Atypical Angina', 'Typical Angina', 'Non-Angina Pain', 'Asymptomatic Chest Pain'])
      
      
-             if chest_pain == 'Atypical Angina':
+         if chest_pain == 'Atypical Angina':
                  
-                 chest_ata = 1
+                chest_ata = 1
                  
-             else:
+         else:
                  
-                 chest_ata = 0
+                chest_ata = 0
                  
                  
-             if chest_pain == 'Typical Angina':
+         if chest_pain == 'Typical Angina':
                  
-                 chest_ta = 1
+                chest_ta = 1
                  
-             else:
+         else:
                  
-                 chest_ta = 0
+                chest_ta = 0
                  
-             if chest_pain == 'Non-Angina Pain':
+         if chest_pain == 'Non-Angina Pain':
                  
-                 chest_nap = 1
+                chest_nap = 1
                  
-             else:
+         else:
                  
-                 chest_nap = 0
+                chest_nap = 0
          
      else:
          
