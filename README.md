@@ -1,6 +1,6 @@
 # Multiple-disease-prediction-project
 
-Welcome to the Multiple Disease Prediction Project! This project aims to develop a system capable of predicting the likelihood of multiple diseases based on various input parameters such as symptoms, medical history, and demographic information. The web app was built using machine learning principles and deployed using Streamlit. You can access the web app using this link https://multiple-disease-prediction-project-mqvyrn55nvkq9zcrkhrrmt.streamlit.app/
+Welcome to the Multiple Disease Prediction Project! This project aims to develop a system capable of predicting the likelihood of multiple diseases based on various input parameters such as symptoms, medical history, and demographic information. The web app was built using machine learning principles and deployed using Streamlit. You can access the web app using this link https://multiple-disease-prediction-project-mqvyrn55nvkq9zcrkhrrmt.streamlit.app/. <br>
 This README file provides an overview of the project, including its purpose, features, and usage guidelines.
 
 Purpose:
