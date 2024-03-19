@@ -18,7 +18,6 @@ Usage Guidelines:
 -  Feedback and Improvement:  Your feedback is valuable for enhancing the accuracy and effectiveness of the prediction models. Feel free to contribute suggestions or report any issues via the project repository's issue tracker.
 
 ## Contributors:
-- Anyanwu Justice (@anyanwujustice27@gmail.com)
 - Abija Joyce (@joyceabija@gmail.com)
 
 ## License:
